@@ -1,0 +1,41 @@
+.error{
+    color: red;
+    font-size: 14px;
+    margin-left: 17px;
+}
+.div{
+    width: 400px;
+    height: 400px;
+    background-color: white;
+    margin-left: 550px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   align-items: center;
+    border: solid black 2px;
+    border-radius: 10px;
+}
+.regform{
+    text-align: center;
+}
+.style{
+    margin-left: 10px;
+}
+#name,#email,#password{
+    margin-left: 10px;
+    width: 250px;
+    padding: 10px;
+    border-radius: 5px;
+    border: solid darkblue 1px;
+}
+#submitbtn{
+    margin-left: 20px;
+    width: 250px;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    background-color: blue;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
