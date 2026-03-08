@@ -57,15 +57,18 @@
 
 .div{
     width:85%;
+    
 }
 #name,#email,#password{
-    width: 80%;
+    width: 95%;
+   margin: auto;
 }
 #submitbtn{
-    width: 80%;
+    width: 100%;
+    margin: auto;
 }
 .regform{
-    font-size:20px;
+    font-size:18px;
 }
 
 .error{
