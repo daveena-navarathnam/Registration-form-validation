@@ -17,7 +17,7 @@ passwordinput.addEventListener("input",validatepassword)
 function validatename(){
     if(nameinput.value ==="")
     {
-        nameerror.textContent="Name cannot be empty";
+        nameerror.textContent="Name cannot be empty!?";
         nameinput.style.border="solid red 1px"
     }
     else
@@ -36,7 +36,7 @@ function validateemail(){
     }    
     else
     {
-        emailerror.textContent="Enter a valid Email"
+        emailerror.textContent="Enter a valid Email!?"
         emailinput.style.border="solid red 1px"
     }    
     checkform()
@@ -45,7 +45,7 @@ function validateemail(){
 function validatepassword(){
     if(passwordinput.value.length < 6)
     {
-        passworderror.textContent="Password must be atleast 6 characters"
+        passworderror.textContent="Password must be atleast 6 characters!"
         passwordinput.style.border="solid red 1px"
     }    
     else
@@ -65,6 +65,8 @@ function checkform(){
     )
     {
         submitbtn.disabled = false
+        submitbtn.style.backgroundColor="green"
+    
     }
     else{
         submitbtn.disabled = true

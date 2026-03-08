@@ -1,20 +1,25 @@
+
+
+
 .error{
     color: red;
     font-size: 14px;
     margin-left: 17px;
 }
 .div{
-    width: 400px;
-    height: 400px;
+    width: 100%;
+    max-width: 400px;
     background-color: white;
-    margin-left: 550px;
-    margin-top: 50px;
+    margin: 50px auto;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
    align-items: center;
     border: solid black 2px;
     border-radius: 10px;
+   
+    
 }
 .regform{
     text-align: center;
@@ -24,13 +29,14 @@
 }
 #name,#email,#password{
     margin-left: 10px;
-    width: 250px;
+    max-width: 250px;
+    width: 100%;
     padding: 10px;
     border-radius: 5px;
     border: solid darkblue 1px;
 }
 #submitbtn{
-    margin-left: 20px;
+    margin-left: 25px;
     width: 250px;
     padding: 10px;
     border-radius: 5px;
@@ -38,4 +44,32 @@
     background-color: blue;
     font-size: 18px;
     margin-bottom: 30px;
+    border: solid white 2px;
+}
+
+@media(max-width:768px){
+    .div{
+        width: 80%;
+    }
+}
+
+@media (max-width:480px){
+
+.div{
+    width:85%;
+}
+#name,#email,#password{
+    width: 80%;
+}
+#submitbtn{
+    width: 80%;
+}
+.regform{
+    font-size:20px;
+}
+
+.error{
+    font-size:12px;
+}
+
 }
